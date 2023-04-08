@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* prefix match class selector */
+        /* p[class^="ram"]
+        {
+            background-color: green;
+        } */
+        /* postfix match class selector */
+        /* p[class$="ram"]
+        {
+            background-color: green;
+        } */
+
+        /* select value seperated by space in class */
+        /* p[class~="mohan"]
+        {
+            background-color: green;
+        } */
+        /* select all element which has class name consist of mohan in class name */
+        p[class*="mohan"]
+        {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+   <p class ="ram mohan rohan shyam">Lorem ipsum dolor sit amet.</p> 
+   <p>no class</p>
+   <p class="rohanmohan alex ram">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum perspiciatis rem aut cumque.</p>
+
+</body>
+</html>

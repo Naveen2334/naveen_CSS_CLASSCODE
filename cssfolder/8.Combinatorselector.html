@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* div p{
+            background-color: blue;
+        } */
+        /* for targeting direct sibling */
+        /* div>p{
+            background-color: green;
+        } */
+        /* for targeting indirect sibling */
+        /* div>span>p{
+            background-color: green;
+        } */
+        /* for targeting genral sibling
+         */
+        /* div~p{
+            background-color: darkolivegreen;
+        } */
+        div~p,div~p{
+            background-color: darkolivegreen;
+        }
+        div+p{
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- (div>p+p+span>p)+p+p+div -->
+    <div>
+        <p>Direct child</p>
+        <p>direct child</p>
+        <span>
+            <p>indirect child</p>
+        </span>
+    </div>
+    <p>imediate sibling + general sibling</p>
+    <p>general sibling</p>
+    <div>general sibling</div>
+</body>
+</html>
